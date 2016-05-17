@@ -1,0 +1,226 @@
+@import "reset.scss";
+@import "initialization.scss";
+
+body {
+	background: url(../images/background.jpg) no-repeat;
+	background-position: center;
+	#{$ie7-}background: #161618;
+}
+
+.main {
+	width: 1096px;
+	height: 1730px;
+	margin: 0 auto;
+	#{$ie7-}background: url(../images/main-bkg.jpg) no-repeat;
+	@extend %relative;
+}
+
+.form {
+	position: absolute;
+	top: 832px;
+	left: 60px;
+	color: #fff;
+	#{$ie7-}width: 516px;
+	@extend %font-fourteen;
+	.title {
+		margin-bottom: 27px;
+		@extend %text-align;
+		@extend %font-twenty-eight;
+	}
+	.form-left {
+		text-align: right;
+		margin: 0 50px 0 25px;
+		@extend %float-left;
+	}
+	.form-right {
+		text-align: right;
+		margin: 0 50px 0 25px;
+		@extend %float-left;
+	}
+	label {
+		display: block;
+		margin-bottom: 24px;
+	}
+	input[type=text] {
+		width: 98px;
+		margin-left: 8px;
+		padding-left: 9px;
+		border: 1px solid #abadb3;
+	}
+	select {
+		width: 109px;
+		margin-left: 8px;
+	}
+	.submit {
+		@extend %text-align;
+		input {
+			width: 88px;
+			height: 34px;
+			line-height: 34px;
+			font-weight: bold;
+			border-radius: 12px;
+			color: #a45006;
+			@extend %text-align;
+			@extend %font-sixteen;
+			@include normalGradient(linear, top, #fced96, #f4bc00);
+		}
+	}
+	.text {
+		width: 376px;
+		line-height: 27px;
+		margin: 28px auto 0;
+		font-weight: bold;
+		@extend %font-fifteen;
+	}
+	.surprise {
+		position: absolute;
+		bottom: -60px;
+		left: 104px;
+		color: #333;
+		@extend %font-sixteen;
+		@include transform(-2.5);
+		span {
+			color: #c04813;
+		}
+	}
+}
+
+.service-text {
+	position: absolute;
+	top: 962px;
+	right: 66px;
+	li {
+		margin-bottom: 10px;
+		color: #333;
+		@extend %relative;
+		h6 {
+			margin-right: 21px;
+			@extend %float-left;
+			@extend %font-normal;
+			@extend %font-eighteen;
+		}
+		p {
+			line-height: 24px;
+			@extend %float-left;
+			@extend %font-thirteen;
+		}
+		i {
+			position: absolute;
+			top: 8px;
+			left: -23px;
+			width: 8px;
+			height: 8px;
+			background-color: #c40200;
+			border: 1px solid #e6b6b5;
+			@include transform(45);
+		}
+	}
+	.service1 {
+		p {
+			width: 320px;
+		}
+	}
+	.service2 {
+		margin-left: -20px;
+		p {
+			width: 316px;
+		}
+	}
+	.service3 {
+		margin-left: -48px;
+		p {
+			width: 342px;
+		}
+	}
+	.service4 {
+		margin-left: -76px;
+		p {
+			width: 356px;
+		}
+	}
+}
+
+.introduce {
+	position: absolute;
+	top: 470px;
+	left: 160px;
+	line-height: 32px;
+	@extend %text-align;
+	p {
+		color: #fff;
+		@extend %font-fifteen;
+	}
+	h6 {
+		color: #e9bf1a;
+		@extend %font-normal;
+		@extend %font-eighteen;
+	}
+	span {
+		color: #e9bf1a;
+	}
+	i {
+		border-bottom: 1px dashed #fff;
+	}
+}
+
+.intro {
+	position: absolute;
+	bottom: 96px;
+	left: 48px;
+	width: 1000px;
+	height: 341px;
+	background-color: #f5f5f5;
+}
+
+.intro-wrapper {
+	padding: 49px 155px 0;
+}
+
+.intro-left {
+	@extend %float-left;
+	.title {
+		margin-bottom: 16px;
+		color: #00334c;
+		@extend %font-twenty-eight;
+	}
+	.list-text {
+		line-height: 32px;
+		color: #333;
+		@extend %font-sixteen;
+	}
+	.text {
+		margin: 16px 0 28px;
+		font-weight: bold;
+		color: #333;
+		@extend %font-sixteen;
+	}
+	.link {
+		width: 298px;
+		height: 43px;
+		line-height: 43px;
+		@extend %text-align;
+		@extend %radiu;
+		@include normalGradient(linear, top, #2fb9fe, #0088cc);
+		a {
+			color: #fff;
+			font-weight: bold;
+			@extend %a-block;
+			@extend %font-sixteen;
+		}
+	}
+}
+
+.intro-right {
+	width: 210px;
+	@extend %float-right;
+	@extend %text-align;
+	.img {
+		height: 181px;
+		margin: 3px 0 16px;
+	}
+	.text {
+		line-height: 24px;
+		color: #333;
+		@extend %font-fourteen;
+	}
+}
